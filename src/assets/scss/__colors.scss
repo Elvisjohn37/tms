@@ -1,0 +1,39 @@
+$colorsPrimary: #ebebeb;
+$colorsPLight: lighten($colorsPrimary, 20%);
+$colorsPDark: darken($colorsPrimary, 15%);
+$colorsPText: darken($colorsPrimary, 70%);
+
+$colorsSecondary: #0f172a;
+$colorsSLight: lighten($colorsSecondary, 5%);
+$colorsSDark: darken($colorsSecondary, 5%);
+$colorsSText: lighten($colorsSecondary, 70%);
+
+@mixin colorsPrimary() {
+    background-color: $colorsPrimary;
+    color: $colorsPText;
+}
+
+@mixin colorsPLight() {
+    background-color: $colorsPLight;
+    color: $colorsPText;
+}
+
+@mixin colorsPDark() {
+    background-color: $colorsPDark;
+    color: $colorsPText;
+}
+
+@mixin colorsSecondary() {
+    background-color: $colorsSecondary;
+    color: $colorsSText;
+}
+
+@mixin colorsSLight() {
+    background-color: $colorsSLight;
+    color: $colorsSText;
+}
+
+@mixin colorsSDark() {
+    background-color: $colorsSDark;
+    color: $colorsSText;
+}

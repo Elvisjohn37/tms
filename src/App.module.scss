@@ -1,0 +1,29 @@
+@import './assets/scss/_colors';
+@import './assets/scss/_main';
+
+.app {
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    padding: $standardSize;
+    @include colorsPrimary;
+
+    .cardList {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+
+        .listTitle {
+            text-align: center;
+            font-weight: 700;
+            padding: $standardSize 0;
+        }
+
+        .addButton {
+            color: rgb(67, 170, 255);
+        }
+    }
+}
